@@ -39,11 +39,11 @@ main{
     color: #fff;
     padding: 32px 29px;
     margin-bottom: 20px;
-
 }
 .card.c1{
     background-color: var(--Moderate-violet);
     position: relative;
+    grid-area: c1;
 }
 .card.c1 img.attern-quotation{
     position: absolute;
@@ -52,6 +52,7 @@ main{
 }
 .card.c2{
     background-color: var(--Very-dark-grayish-blue);
+    grid-area: c2;
 }
 .card.c3,
 .card.c5{
@@ -65,7 +66,15 @@ main{
 .card.c5 p{
 color:  var(--Very-dark-grayish-blue);
 }
-
+.card.c3{
+    grid-area: c3;
+}
+.card.c4{
+    grid-area: c4;
+}
+.card.c5{
+    grid-area: c5;
+}
 
  .card .card-flex{
     display: flex;
@@ -126,8 +135,13 @@ color:  var(--Very-dark-grayish-blue);
     .grid-style {
         gap: 19px;
         display: grid;
-        grid-template-columns: 75% 1fr;
-    }   
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "c1 c1 c2 c5"
+            "c3 c4 c4 c5"; 
+            max-width: 1110px;
+        }   
+
     .cards:first-child{
         /* display: flex;
         align-items: flex-start;
@@ -147,5 +161,11 @@ color:  var(--Very-dark-grayish-blue);
     }
     main{
         overflow: hidden;
+    }
+    .card{
+    /* max-height: 585px; */
+    }
+    .card.c5 p {
+        margin-top: 14px;
     }
 }
