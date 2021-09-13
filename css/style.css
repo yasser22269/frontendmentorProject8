@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+    /* background-color: Var(--Violet);  */
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    --FontSize: 13px;
+    font-size: var(--FontSize);
+}
+.center-text {
+    text-align: center;
+}
+
+main{
+    overflow: hidden;
+    position: relative;
+    padding: 66px;
+}
+
+
+
+.cards{
+    display: block;
+}
+ .card{
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+    padding: 32px 29px;
+    margin-bottom: 20px;
+
+}
+.card.c1{
+    background-color: var(--Moderate-violet);
+    position: relative;
+}
+.card.c1 img.attern-quotation{
+    position: absolute;
+    right: 15%;
+    top: 0;
+}
+.card.c2{
+    background-color: var(--Very-dark-grayish-blue);
+}
+.card.c3,
+.card.c5{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #eee;
+    box-shadow: 2px 0px 21px -15px #000;
+}
+.card.c4{
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+ .card .card-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ .card .card-flex .info-card:last-child{
+    margin-left: 13px;
+}
+ .card .card-flex .info-card img{
+    width: 30px;
+    border-radius: 50%;
+}
+ .card .info-card  h5{
+    font-size: var(--FontSize);
+    margin-top: 0;
+}
+.card  h5{
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+ .card .info-card  p{
+    color: var(--SoftPink);
+    font-size: 13px;
+    margin-top: 3px;
+}
+ .card p{
+    margin-top: 24px;
+    font-size: var(--FontSize);
+    color: var(--Light-gray);
+    line-height: 1.8;
+}
+
+
+
+
+.cards-left {
+    margin-top: 52px;
+}
+
+@media (max-width: 502px) {
+    main {
+        padding: 23px;
+    }
+     .card{
+        margin-bottom: 20px;
+    }
+    .card h5 {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+   
+}
+
+@media (min-width: 1100px){
+     
+    .grid-style {
+        gap: 19px;
+        display: grid;
+        grid-template-columns: 75% 1fr;
+    }   
+    .cards:first-child{
+        /* display: flex;
+        align-items: flex-start;
+        gap: 19px; */
+        gap: 19px;
+        display: grid;
+        grid-template-columns: 65% 1fr;
+        margin-top: 52px;
+        align-items: stretch;
+    }
+    .cards:nth-child(2){
+        gap: 19px;
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        align-items: center;
+        align-items: stretch;
+    }
+    main{
+        overflow: hidden;
+    }
+}
