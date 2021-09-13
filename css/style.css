@@ -59,10 +59,13 @@ main{
     color: #000;
     border: 1px solid #eee;
     box-shadow: 2px 0px 21px -15px #000;
+   
 }
-.card.c4{
-    background-color: var(--Very-dark-blackish-blue);
+.card.c3 p,
+.card.c5 p{
+color:  var(--Very-dark-grayish-blue);
 }
+
 
  .card .card-flex{
     display: flex;
