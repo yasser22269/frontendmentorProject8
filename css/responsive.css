@@ -1,32 +1,39 @@
-@media (max-width: 1000px) {
-    header{
-        padding: 0 26px;
+@media (max-width: 502px) {
+    main {
+        padding: 23px;
     }
-    header p{
-        width: auto;
+     .card{
+        margin-bottom: 20px;
     }
-    main{
-        margin: auto;
-        text-align: center ;
-        height: auto;
+    .card h5 {
+        margin-top: 15px;
+        font-size: 15px;
     }
-    main .info {
-        display: block;
-        gap: 0 ;
-        margin-bottom: 36px;
-    }
-    main .info .left img {
-        width: 100%;
-    }
-    footer {
-        position: relative;
-        top: auto;
-        right: auto;
-        display: inline-flex;
-    }
+   
 }
 
-@media (min-width: 1001px){
-  
+@media (min-width: 1100px){
+     
+    .grid-style {
+        gap: 19px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "c1 c1 c2 c5"
+            "c3 c4 c4 c5"; 
+            max-width: 1110px;
+            align-items: center;
+        }   
+
    
+    
+    main{
+        overflow: hidden;
+    }
+    .card{
+    /* max-height: 585px; */
+    }
+    .card.c5 p {
+        margin-top: 14px;
+    }
 }

@@ -27,11 +27,6 @@ main{
     padding: 66px;
 }
 
-
-
-.cards{
-    display: block;
-}
  .card{
     background-color: #000;
     border-radius: 8px;
@@ -116,56 +111,3 @@ color:  var(--Very-dark-grayish-blue);
     margin-top: 52px;
 }
 
-@media (max-width: 502px) {
-    main {
-        padding: 23px;
-    }
-     .card{
-        margin-bottom: 20px;
-    }
-    .card h5 {
-        margin-top: 15px;
-        font-size: 15px;
-    }
-   
-}
-
-@media (min-width: 1100px){
-     
-    .grid-style {
-        gap: 19px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "c1 c1 c2 c5"
-            "c3 c4 c4 c5"; 
-            max-width: 1110px;
-        }   
-
-    .cards:first-child{
-        /* display: flex;
-        align-items: flex-start;
-        gap: 19px; */
-        gap: 19px;
-        display: grid;
-        grid-template-columns: 65% 1fr;
-        margin-top: 52px;
-        align-items: stretch;
-    }
-    .cards:nth-child(2){
-        gap: 19px;
-        display: grid;
-        grid-template-columns: 30% 1fr;
-        align-items: center;
-        align-items: stretch;
-    }
-    main{
-        overflow: hidden;
-    }
-    .card{
-    /* max-height: 585px; */
-    }
-    .card.c5 p {
-        margin-top: 14px;
-    }
-}
